@@ -29,13 +29,14 @@ which -a $commandeName | xargs dpkg -S 2> /dev/null | cut -d':' -f1
 ```bash
 !#/bin/bash
 
-if dpkg -l | grep q $1
+if dpkg -l | grep -q $1
 then
 	echo "INSTALLE"
 else
 	echo "NON INSTALLE"
 fi
 ```
+`dpkg coreutils 2>/dev/null | grep "^ii" > /dev/null && echo "INSTALLE" || echo "NON INSTALLE"`
 
 ## Exercice 4.
 ```bash
