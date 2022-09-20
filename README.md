@@ -48,4 +48,10 @@ dpkg -L coreutils
 * `lynx` est un navigateur web non graphique
 * 
 ## Exercice 6. Installation d’un paquet par PPA
+Le dossier `/etc/apt/sources.list.d` contient le fichier linuxprising-ubuntu-java-jammy.list.
 
+## Exercice 7. Installation d’un logiciel à partir du code source
+X
+
+## Exercice 8. Création de dépôt personnalisé
+X
