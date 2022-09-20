@@ -16,6 +16,6 @@
 8. Quels paquets proposent de jouer au sudoku ? Le packet est `sudoku`
 
 ## Exercice 2.
-* A partir de quel paquet est installée la commande ls ? 
-* Comment obtenir cette information en une seule commande, pour n’importe quel programme ? 
+* A partir de quel paquet est installée la commande ls ? `dpkg -S /bin/ls`
+* Comment obtenir cette information en une seule commande, pour n’importe quel programme ?  `which ls | dpkg -S | cut -d':' -f1`
 * Utilisez la réponse à cette question pour écrire un script appelé origine-commande (sans l’extension .sh) prenant en argument le nom d’une commande, et indiquant quel paquet l’a installée.
